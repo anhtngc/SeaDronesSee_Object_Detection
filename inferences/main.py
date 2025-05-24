@@ -7,16 +7,15 @@ import numpy as np
 
 if __name__ == "__main__":
     #ONLY CHANGE 3 LINES
-    data_path = 'val' #path to dataset
+    data_path = '/home/ngocanh/SeaDronesSee_Object_Detection/val' #path to dataset
     nc = 5 #number of class
-    path_to_model = "models/best_float32.tflite" #path to model
-    #
+    path_to_model = "/home/ngocanh/SeaDronesSee_Object_Detection/models/best_float32.tflite" #path to model
 
     input_size = 320
     model = Model(model_path=path_to_model)
     model.prepare()
 
-    image_path = data_path + '/images/'
+    image_path = data_path + '/images'
     total_time = 0.0
     total_file = len(os.listdir(image_path))
     results = []

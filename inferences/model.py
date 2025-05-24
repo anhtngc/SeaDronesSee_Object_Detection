@@ -1,5 +1,5 @@
 import numpy as np
-import tflite_micro_runtime.interpreter as tflite
+import tflite_runtime.interpreter as tflite
 
 from nms import non_max_suppression_yolov8
 
